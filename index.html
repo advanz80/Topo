@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Topo Race">
+  <meta name="theme-color" content="#1f8fd6">
+  <title>Topo Race</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Startscherm -->
+  <section id="home" class="screen active">
+    <header class="home-head">
+      <h1>Topo Race <span class="flag">🏁</span></h1>
+      <p>Ken jij Nederland? Kies een level!</p>
+      <button id="soundBtn" class="icon-btn" aria-label="Geluid aan/uit">🔊</button>
+    </header>
+    <div id="groups"></div>
+  </section>
+
+  <!-- Modus kiezen -->
+  <section id="modes" class="screen">
+    <header class="bar">
+      <button class="icon-btn back" data-go="home" aria-label="Terug">←</button>
+      <h2 id="modesTitle"></h2>
+    </header>
+    <div id="modeList" class="mode-list"></div>
+  </section>
+
+  <!-- Spelen -->
+  <section id="play" class="screen">
+    <header class="bar">
+      <button class="icon-btn back" id="quitBtn" aria-label="Stoppen">✕</button>
+      <div class="progress"><div id="progressFill"></div></div>
+      <div class="clock">
+        <div id="timer">0:00.0</div>
+        <div id="record"></div>
+      </div>
+    </header>
+    <div class="play-body">
+      <div class="map-wrap"><svg id="map" aria-label="Kaart van Nederland"></svg><div id="penalty"></div></div>
+      <aside class="panel">
+        <div id="prompt"></div>
+        <div id="answers"></div>
+        <div id="feedback"></div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Uitslag -->
+  <section id="result" class="screen">
+    <div class="result-card">
+      <div id="resultEmoji">🏁</div>
+      <h2 id="resultTitle"></h2>
+      <div id="resultTime"></div>
+      <div id="resultDetail"></div>
+      <div id="resultMistakes"></div>
+      <div class="result-btns">
+        <button class="big-btn" id="againBtn">Nog een keer 🔁</button>
+        <button class="big-btn alt" id="mistakesBtn">Oefen mijn fouten</button>
+        <button class="big-btn ghost" data-go="modes">Ander spel</button>
+      </div>
+    </div>
+  </section>
+
+  <canvas id="confetti"></canvas>
+
+  <script src="js/map-nl.js"></script>
+  <script src="js/levels.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

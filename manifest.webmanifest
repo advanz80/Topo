@@ -1,0 +1,10 @@
+{
+  "name": "Topo Race",
+  "short_name": "Topo Race",
+  "lang": "nl",
+  "start_url": "./",
+  "display": "fullscreen",
+  "background_color": "#e9f6ff",
+  "theme_color": "#1f8fd6",
+  "icons": [{ "src": "icon.png", "sizes": "512x512", "type": "image/png" }]
+}
