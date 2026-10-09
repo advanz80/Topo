@@ -214,7 +214,7 @@
       const showName = learn && inLevel.has(id);
       const text = showName ? it.name : it.hint;
       if (text) {
-        const t = el('svg:text', { x: off[0], y: off[1], 'text-anchor': off[2], class: 'lbl ' + (showName ? 'city-name' : 'hint small'), text }, g);
+        const t = el('svg:text', { x: off[0], y: off[1], style: `text-anchor:${off[2]}`, class: 'lbl ' + (showName ? 'city-name' : 'hint small'), text }, g);
         if (showName) t.dataset.for = id;
       }
       mapEls[id] = g;

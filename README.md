@@ -2,7 +2,7 @@
 
 Topografiespel van Nederland voor kinderen, gemaakt voor de iPad. Er zijn geen accounts en er wordt niets gebouwd: het zijn alleen statische bestanden.
 
-**Levels:** Provincies · Hoofdsteden · Bonus (Rotterdam, Enschede, Eindhoven, Schiphol, Duitsland, België) · Grote toets (alles door elkaar)
+**Levels:** Provincies · Hoofdsteden · Bonus (Amsterdam, Rotterdam, Enschede, Eindhoven, Schiphol, Duitsland, België) · Grote toets (alles door elkaar)
 **Spelvormen:** 📖 Leren · 👆 Aanwijzen · 🔤 Kiezen · ⌨️ Typen. Je speelt tegen de klok: elke fout kost +5 sec. Je record wordt per level en spelvorm op het apparaat bewaard.
 
 ## Online zetten (GitHub Pages)

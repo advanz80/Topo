@@ -38,10 +38,11 @@ window.TOPO = {
     c_maastricht: { name: 'Maastricht', type: 'city', at: [50.851, 5.691], dir: 'l', province: 'limburg' },
 
     // ── Bonus ──
+    amsterdam: { name: 'Amsterdam', type: 'city', at: [52.373, 4.893], dir: 'r', hint: 'Am' },
     rotterdam: { name: 'Rotterdam', type: 'city', at: [51.922, 4.479], dir: 'b', hint: 'Ro' },
     enschede:  { name: 'Enschede', type: 'city', at: [52.221, 6.894], dir: 'b', hint: 'En' },
     eindhoven: { name: 'Eindhoven', type: 'city', at: [51.441, 5.478], dir: 'b', hint: 'EH' },
-    schiphol:  { name: 'Schiphol', type: 'city', at: [52.31, 4.768], dir: 'r', hint: 'Sc', icon: '✈' },
+    schiphol:  { name: 'Schiphol', type: 'city', at: [52.31, 4.768], dir: 'b', hint: 'Sc', icon: '✈' },
     duitsland: { name: 'Duitsland', type: 'land', ref: 'DEU', label: [52.0, 7.5], hint: 'Du' },
     belgie:    { name: 'België', type: 'land', ref: 'BEL', label: [50.82, 4.5], hint: 'Be', aliases: ['Belgie', 'Belgium'] },
 
@@ -64,8 +65,8 @@ window.TOPO = {
           desc: 'De 12 hoofdsteden',
           items: ['c_groningen', 'c_leeuwarden', 'c_assen', 'c_zwolle', 'c_lelystad', 'c_arnhem', 'c_utrecht', 'c_haarlem', 'c_denhaag', 'c_middelburg', 'c_denbosch', 'c_maastricht'] },
         { id: 'bonus', title: 'Bonus', emoji: '⭐', color: '#b05cff',
-          desc: 'Steden, Schiphol en buurlanden',
-          items: ['rotterdam', 'enschede', 'eindhoven', 'schiphol', 'duitsland', 'belgie'] },
+          desc: 'Amsterdam, Rotterdam, Schiphol en meer',
+          items: ['amsterdam', 'rotterdam', 'enschede', 'eindhoven', 'schiphol', 'duitsland', 'belgie'] },
         { id: 'toets', title: 'Grote toets', emoji: '🏆', color: '#ffc21a',
           desc: 'Alles door elkaar!',
           from: ['provincies', 'hoofdsteden', 'bonus'] },
