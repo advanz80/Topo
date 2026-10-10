@@ -48,8 +48,8 @@ window.TOPO = {
 
     // ── Water (decoratie, later misschien vraagbaar) ──
     noordzee:   { name: 'Noordzee', type: 'water', label: [52.75, 3.75] },
-    waddenzee:  { name: 'Waddenzee', type: 'water', label: [53.285, 5.22], rotate: -33, size: 15 },
-    ijsselmeer: { name: 'IJsselmeer', type: 'water', label: [52.8, 5.3] },
+    waddenzee:  { name: 'Waddenzee', type: 'water', label: [53.12, 5.11], rotate: -40, size: 14 },
+    ijsselmeer: { name: 'IJsselmeer', type: 'water', label: [52.8, 5.38], size: 13 },
   },
 
   // Levels op het keuzescherm, per groep.
