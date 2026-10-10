@@ -186,7 +186,8 @@
     for (const [id, it] of Object.entries(ITEMS)) {
       if (it.type !== 'water') continue;
       const [x, y] = proj(it.label);
-      el('svg:text', { x, y, class: 'lbl water', 'font-size': 18 * fs, text: it.name }, gLabels);
+      const rot = it.rotate ? { transform: `rotate(${it.rotate} ${x} ${y})` } : {};
+      el('svg:text', { x, y, ...rot, class: 'lbl water', 'font-size': (it.size || 18) * fs, text: it.name }, gLabels);
     }
     // Namen van gebieden (alleen in Leren-modus) en hints (altijd)
     for (const [id, it] of Object.entries(ITEMS)) {
